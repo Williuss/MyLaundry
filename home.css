@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1ffff;
+}
+
+.logo{
+    width: 220px;
+    height: 60px;
+}
+
+.welcome{
+    padding-left: 57px;
+    margin-bottom: -150px;
+}
+
+.welcome h1{
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    font-size: 55px;
+}
+
+.welcome h2{
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.row1{
+    margin-top: 180px;
+    display: flex;
+}
+
+.image-1{
+    margin-left: 600px;
+    margin-top: 0px;
+    margin-bottom: -150px;
+    width: 300px;
+    height: 300px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #AC7676;
+    background-color: #f3ffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 10rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 4px 0;
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+nav div img{
+    width: 288px;
+    height: 56px;
+    display: flex;
+    padding-top: 5px;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    color: rgb(164, 241, 255);
+}
+
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+    color:white;
+}
+
+.howitworks-button{
+    background-color: #D0F6FF;
+    border: none; 
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    transform: translate(50%, 400%);
+}
+
+.howitworks-button a{
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; 
+    text-decoration: none;
+    font-size: 25px
+}
+
+.howitworks-button :hover{
+    background-color: rgb(232, 252, 255);
+    border-radius: 25px;
+    color: rgb(42, 42, 42);
+}
+
+.collabs{
+    display: flex;
+    margin-left: 110px;
+}
+
+.collabs h2{
+    color: #489FB5;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    }
+
+
+    nav ul.hidden{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
